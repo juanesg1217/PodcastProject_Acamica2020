@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="este sitio contiene informacion para web developers">
+    <meta name="keywords" content="Podcast, CSS, HTML, programacion, historia, seguridad informatica">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Podcast Website</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__mobile">
+      <input class="navbar__checkbox" type="checkbox" id="btn-menu"/>
+      <label class="menu__line" for="btn-menu"></label>
+      <label class="menu__line" for="btn-menu"></label>
+      <label class="menu__line" for="btn-menu"></label>
+      <div class="navbar__menu-desplegable">
+        <ul class="lista">
+          <li><a href="#episodios">episodios</a></li>
+          <li><a href="#nosotros">nosotros</a></li>
+          <li><a href="#entrevistas">entrevistas</a></li>
+          <li><a href="#topicos">t&oacute;picos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar__desktop">
+      <a href="#episodios">episodios</a> 
+      <a href="#nosotros">nosotros</a>  
+      <a href="#entrevistas">entrevistas</a> 
+      <a href="#topicos">t&oacute;picos</a>  
+    </div>
+  </nav>
+  <main class="content_container">
+    <header class="header_container">
+      <h1 class="header__title">Hello <span class="header__title-world">world</span> pale blue dot</h1>
+      <p class="header__description">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;as.</p>
+      <p class="header__description-2">El portal de podcasts que explora el mundo de la programaci&oacute;n y la tecnolog&iacute;a. Nuevos episodios, todos los jueves cada 15 d&iacute;as.</p>
+      <a href="#nosotros" class="header__btn">conoc&eacute; m&aacute;s</a>
+    </header>
+    <section class="episodios__container">
+      <h2 class="episodios__title" id="episodios">Episodios</h2>
+      <div class="episodios__iframes">
+        <iframe class="iframeItem item1" title="JS Party Podcast" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+        <iframe class="iframeItem item2" title="Syntax Web Development Podcast" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" allow="encrypted-media"></iframe>
+        <iframe class="iframeItem item3" title="ReWork by Basecamp Podcast" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media"></iframe>
+        <iframe class="iframeItem item4" title="The Ruby on rails Podcast" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" allow="encrypted-media"></iframe>
+      </div>
+    </section>
+    <div class="history__container">
+      <img class="history__container-phonepicture" src="./images/phone.png" alt="picture of woman and the history of coding">
+      <article class="history__article">
+        <h2 class="history__article-title" id="nosotros">De d&oacute;nde venimos</h2>
+        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+        <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+      </article>
+    </div>
+    <section class="images__title">
+      <h2 class="title" id="entrevistas">Invitadas/os estelares</h2>
+    </section>
+    <figure class="images__container">
+      <img class="images" src="./images/grace-hopper.png" alt="Grace Hopper parada al lado de un coputador">  
+      <img class="images" src="./images/Katie-Bouman.png" alt="Katie Bouman cientifica de la compuacion">
+      <img class="images" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton con muchos ibros">
+      <img class="images" src="./images/computer-in-1950s.png" alt="computadores en 1950">
+      <img class="images" src="./images/operatos-eniac.png" alt="operarias de computadora con Eniac">
+      <img class="images" src="./images/susan-kare.png" alt="foto de susan kare sentada y sonriendo">
+    </figure>
+    <figure class="temas__container">
+      <h2 class="temas__title" id="topicos">Algunos de nuestros temas</h2>
+      <section class="temas__images">
+        <div class="tema1">
+          <img class="imageItem" src="./images/icon1.svg" alt="imaagen de trabajo remoto">
+          <h3>Trabajo remoto</h3>
+        </div>
+        <div class="tema2">
+          <img class="imageItem" src="./images/icon2.svg" alt="imagen de repensando la programacion">
+          <h3>Repensando la programaci&oacute;n</h3>
+        </div>
+        <div class="tema3">
+          <img class="imageItem item" src="./images/icon3.svg" alt="imagen de bases del codigo">
+          <h3>Bases del c&oacute;digo</h3>
+        </div>
+        <div class="tema4">
+          <img class="imageItem item" src="./images/icon4.svg" alt="imagen de seguridad informatica">
+          <h3>Seguridad inform&aacute;tica</h3>
+        </div>
+      </section>    
+    </figure>
+    <section class="novedades__container">
+      <h2 class="novedades__title">¿Quer&eacute;s las &uacute;ltimas novedades?</h2>
+      <a href="#episodios" class="novedades__btn">escuch&aacute; los episodios</a>
+    </section>
+    <footer class="footer__container">
+      <p class="footer__copyright">&copy; 2019— Hello blue pale dot</p>
+      <div class="footer__socialmedia">
+        <a href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/login?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://web.telegram.org/#/login" target="_blank"><i class="fab fa-telegram"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
