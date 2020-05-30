@@ -1,0 +1,104 @@
+.history__container {
+    margin-top: -6em;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    .history__container-phonepicture {
+        width: 320px;
+        height: 519px;
+        z-index: 2;        
+    }
+
+    .history__article {        
+        font-family: $font2;
+        font-size: 14px;
+        color: #060A24;
+        line-height: 22px;
+
+        .history__article-title {
+            font-family: $font1;
+            font-weight: 400;
+            font-size: 36px;
+            color: #060A24;
+            line-height: 42px;
+            margin: 27px 0 8px;
+        }
+    }  
+}
+
+@media screen and (min-width: 425px) {
+
+    .history__container {
+        .history__article {
+            padding: 0 4%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .history__container {
+        margin-top: -5.8em;
+              
+        .history__container-phonepicture {
+            width: auto;
+            height: 660px;       
+        }
+    
+        .history__article {        
+            padding: 0 5%;          
+        }  
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .history__container {
+        flex-direction: row;
+        padding: 0 10% 0 8%;
+        margin-top: -10.5em;
+
+        .history__container-phonepicture {
+            width: auto;
+            height: 660px;
+        }
+
+        .history__article { 
+            padding: 0;
+            margin-left: 5%;      
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 1px;
+    
+            .history__article-title {
+                font-size: 45px;
+                color: #060A24;
+                line-height: 62px;
+                margin: 40px 0 24px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .history__container {
+        padding: 0 15% 0 13.9%;
+
+        .history__article { 
+            padding: 0 0 0 3%;
+            margin-left: 7%; 
+    
+            .history__article-title {
+                font-size: 48px;
+                margin: 31px 0 24px;
+            }
+        }
+    }
+
+}

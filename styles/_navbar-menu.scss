@@ -5,9 +5,12 @@
   position: relative; 
   background: white;
   z-index: 1;
-  background-image: url("/images/logo.svg");
-  background-position: 5% 10px;
-  background-repeat:no-repeat;
+  
+  .navbar__logo {
+    position: absolute;
+    left: 5%;
+    top: 10px;
+  }
 
   .navbar__checkbox {
     width: 25px;
@@ -124,9 +127,12 @@
   
   .navbar__mobile {
     min-height: 60px;
-    background-image: url("/images/logo.svg");
-    background-size: 30px;
-    background-position: 5% 15px;
+    
+    .navbar__logo {
+      top: 15px;
+      width: 30px;
+      height: auto;
+    }
 
     .navbar__checkbox {
       height: 21px;
@@ -158,10 +164,13 @@
     display: block;
     background: white;
     z-index: 1;
-    background-image: url(/images/logo.svg);
-    background-size: 36px 36px;
-    background-position: 100px 22px;
-    background-repeat:no-repeat;
+    
+    .navbar__logo {
+      top: 22px;
+      left: 100px;
+      width: 36px;
+      height: auto;
+    }
 
     .navbar__checkbox, .menu__line, .navbar__menu-desplegable, .lista {
       display: none;

@@ -1,0 +1,96 @@
+.temas__container {
+    padding: 0 5%;
+
+    .temas__title {
+        font-family: $font1;
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        line-height: 42px;
+        margin: 48px 0 24px;
+    }
+
+    .temas__images {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        
+        .tema1, .tema2, .tema3, .tema4{
+            font-family: $font1;
+            font-size: 21px;
+            font-weight: 600;
+            color: #060A24;
+            text-align: center;
+            line-height: 32px;
+
+            .imageItem {
+                margin: 13px 0 5px;
+                &.item {
+                    margin-top: 29px;
+                }
+            }            
+    
+            & h3{
+                margin: 0 0 36px;
+            }
+        }   
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .temas__container {
+        .temas__title {        
+            margin: 48px 0 40px;
+        }
+        .temas__images {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .temas__container {
+        padding: 0 8%;
+        .temas__title {
+            margin: 64px 0 56px;
+            font-size: 48px;
+        }
+        .temas__images {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+            .tema1, .tema2, .tema3, .tema4{
+                font-size: 22px;
+                
+                .imageItem {
+                    margin: 13px 0 5px;
+                    &.item {
+                        margin-top: 13px;
+                    }
+                }        
+            }                
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .temas__container {
+        padding: 0 13.8%;
+        .temas__title {
+            margin: 64px 0 56px;
+            font-size: 48px;
+        }
+        .temas__images {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        
+            .tema1, .tema2, .tema3, .tema4{
+                font-size: 21px;
+            }                
+        }
+    }
+
+}
